@@ -80,3 +80,20 @@
   .founder-photo{max-width:100%;justify-self:stretch}
   .founder-photo img{width:100%;height:auto;max-height:none}
 }
+
+/* QA fixes: hero CTA + actionable start modes + sharp founder portrait */
+.solid-btn{color:#fff}
+.start-modes button{
+  appearance:none;background:transparent;border:1px solid #c9b6a4;border-radius:999px;
+  padding:5px 8px;color:#6e5a49;font-size:8px;letter-spacing:.12em;line-height:1;cursor:pointer
+}
+.start-modes button:hover,.start-modes button:focus-visible{
+  background:#1a1714;color:#fff;border-color:#1a1714;outline:none
+}
+.start-card:hover .start-modes button{border-color:#b59c86}
+.founder-photo img{
+  width:340px;height:425px;object-fit:cover;object-position:center 34%;
+  image-rendering:auto;filter:none!important
+}
+@media(max-width:900px){.founder-photo img{width:320px;height:400px}}
+@media(max-width:620px){.founder-photo img{width:100%;height:auto;max-height:none}}
