@@ -5,4 +5,19 @@ cameraBtn.addEventListener('click',()=>cameraInput.click());
 cameraInput.addEventListener('change',()=>showFiles(cameraInput.files));
 const SpeechRecognition=window.SpeechRecognition||window.webkitSpeechRecognition;
 if(SpeechRecognition){const recognition=new SpeechRecognition();recognition.continuous=false;recognition.interimResults=false;recognition.lang=navigator.language||'en-US';micBtn.addEventListener('click',()=>{try{recognition.lang=navigator.language||'en-US';recognition.start();micBtn.classList.add('active');voiceStatus.classList.add('listening');voiceStatus.textContent='Listening... speak naturally.'}catch(e){}});recognition.onresult=e=>{const spoken=e.results[0][0].transcript;goal.value=(goal.value?goal.value+' ':'')+spoken;voiceStatus.textContent='Got it. You can keep typing or speak again.'};recognition.onend=()=>{micBtn.classList.remove('active');voiceStatus.classList.remove('listening')};recognition.onerror=()=>{micBtn.classList.remove('active');voiceStatus.classList.remove('listening');voiceStatus.textContent='Microphone unavailable. You can keep typing.'}}else{micBtn.disabled=true;voiceStatus.textContent='Voice input is not supported by this browser. You can still type in English, Portuguese or Spanish.'}
+document.querySelectorAll('[data-hero-action]').forEach(btn=>btn.addEventListener('click',e=>{
+  e.stopPropagation();
+  const action=btn.dataset.heroAction;
+  state.mode=action;
+  planner.classList.add('open');
+  planner.setAttribute('aria-hidden','false');
+  document.body.classList.add('planner-open');
+  current=2;
+  render();
+  requestAnimationFrame(()=>{
+    if(action==='photo') fileInput.click();
+    if(action==='camera') cameraInput.click();
+    if(action==='voice') micBtn.click();
+  });
+}));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});document.querySelector('.start-card').addEventListener('keydown',e=>{if(e.key==='Enter')open('photo')});render()})();
