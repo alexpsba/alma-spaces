@@ -7,7 +7,7 @@
 <title>ALMA — Spaces with purpose</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css?v=2">
+<link rel="stylesheet" href="./styles.css?v=3">
 </head>
 <body>
 <header class="topbar">
@@ -48,7 +48,8 @@
   <div class="experience-copy">
     <div class="section-number light">02 / START HERE</div>
     <h2>You don't need<br>a finished plan.</h2>
-    <p>Bring the messy part: a photo, a problem, an inspiration image, or simply the feeling that the room isn't right.</p>
+    <p>Bring the messy part: a photo, a file, a problem, an inspiration image, or simply the feeling that the room isn't right.</p>
+    <div class="alma-capabilities"><span>EN / PT / ES</span><p>ALMA speaks English, Portuguese and Spanish fluently, with deep experience in business administration and production management.</p></div>
   </div>
   <div class="entry-grid">
     <button data-open-planner data-mode="photo"><svg viewBox="0 0 24 24"><path d="M4 6h4l1.5-2h5L16 6h4v14H4z"/><circle cx="12" cy="13" r="4"/></svg><strong>I have a photo</strong><span>Start from the room you have</span><b>↗</b></button>
@@ -103,7 +104,16 @@
    </div>
    <div class="planner-step" data-step="2">
     <div class="planner-kicker">IN YOUR WORDS</div><h2>What's not working — or what do you want to feel different?</h2>
-    <textarea id="goalInput" placeholder="Don't worry about design language. Just tell us what you notice, need or want..."></textarea>
+    <div class="input-tools">
+      <label class="tool-btn" for="fileInput"><svg viewBox="0 0 24 24"><path d="M12 16V4"/><path d="M8 8l4-4 4 4"/><path d="M4 15v5h16v-5"/></svg><span>Upload</span></label>
+      <input id="fileInput" type="file" accept="image/*,.pdf,.doc,.docx" multiple hidden>
+      <button class="tool-btn" id="cameraBtn" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h4l1.5-2h5L16 7h4v13H4z"/><circle cx="12" cy="13" r="4"/></svg><span>Camera</span></button>
+      <input id="cameraInput" type="file" accept="image/*" capture="environment" hidden>
+      <button class="tool-btn" id="micBtn" type="button"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0013 0"/><path d="M12 17.5V21"/><path d="M9 21h6"/></svg><span>Speak</span></button>
+    </div>
+    <div class="attachment-list" id="attachmentList"></div>
+    <div class="voice-status" id="voiceStatus">Speak naturally in English, Portuguese or Spanish.</div>
+    <textarea id="goalInput" placeholder="Type or speak naturally. English, Portuguese and Spanish are welcome..."></textarea>
     <button class="planner-next">Continue</button>
    </div>
    <div class="planner-step" data-step="3">
@@ -121,5 +131,5 @@
   <div class="planner-footer"><button id="plannerBack">← Back</button><span id="stepCounter">01 / 05</span></div>
  </section>
 </div>
-<script src="./app.js?v=2"></script>
+<script src="./app.js?v=3"></script>
 </body></html>
