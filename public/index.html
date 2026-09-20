@@ -1,216 +1,125 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#ece8df" />
-  <meta name="description" content="ALMA — Interior design, construction and project management. Spaces with purpose." />
-  <title>ALMA — Spaces with purpose.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=1" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f2f0eb">
+<meta name="description" content="ALMA — Interior design, renovation and project direction.">
+<title>ALMA — Spaces with purpose</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=2">
 </head>
 <body>
-  <header class="topbar">
-    <a href="#top" class="wordmark" aria-label="ALMA home">ALMA<span>.</span></a>
-    <nav class="desktop-nav">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
-      <a href="#about">About</a>
-    </nav>
-    <button class="planner-link" data-open-planner>Plan your space <span>↗</span></button>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
-  </header>
+<header class="topbar">
+  <a class="brand" href="#top">ALMA<span>°</span></a>
+  <nav><a href="#approach">Approach</a><a href="#services">What we do</a><a href="#studio">Studio</a></nav>
+  <button class="header-cta" data-open-planner>Start a project <span>↗</span></button>
+</header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="kicker">INTERIOR DESIGN · CONSTRUCTION · PROJECT MANAGEMENT</p>
-        <h1>Spaces<br><em>with purpose.</em></h1>
-        <p class="hero-lede">ALMA brings design thinking and construction experience into one clear process — from the first idea to the finished space.</p>
-        <div class="hero-actions">
-          <button class="primary-action" data-open-planner>Tell us about your space</button>
-          <a href="#work" class="text-action">Explore selected work <span>↓</span></a>
-        </div>
-      </div>
-
-      <div class="hero-gallery" aria-label="Interior design gallery">
-        <figure class="hero-main">
-          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=88" alt="Warm modern interior with natural materials">
-        </figure>
-        <figure class="hero-detail">
-          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=88" alt="Neutral interior detail">
-        </figure>
-        <div class="hero-note">
-          <span>01</span>
-          <p>Design that works beautifully in real life.</p>
-        </div>
-      </div>
-
-      <div class="hero-stamp">ALMA<br><span>SPACES WITH PURPOSE</span></div>
-    </section>
-
-    <section class="manifesto">
-      <p class="section-label">WHAT ALMA DOES</p>
-      <div class="manifesto-copy">
-        <p>We don't start with cabinets.</p>
-        <h2>We start with <em>how you want to live.</em></h2>
-        <p class="manifesto-body">Then we bring together space planning, materials, interior design, construction and project coordination around one vision.</p>
-      </div>
-    </section>
-
-    <section class="work" id="work">
-      <div class="section-head">
-        <p class="section-label">SELECTED DIRECTIONS</p>
-        <h2>One studio.<br>Many kinds of transformation.</h2>
-      </div>
-      <div class="project-grid">
-        <article class="project project-large">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1500&q=88" alt="Modern residential living space">
-          <div class="project-meta"><span>Whole-home renovation</span><span>Design + Build</span></div>
-        </article>
-        <article class="project">
-          <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1200&q=88" alt="Contemporary kitchen">
-          <div class="project-meta"><span>Kitchens</span><span>Planning + Construction</span></div>
-        </article>
-        <article class="project project-tall">
-          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=88" alt="Calm modern living room">
-          <div class="project-meta"><span>Interior design</span><span>Materials + Styling</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="services" id="services">
-      <p class="section-label">HOW WE CAN HELP</p>
-      <div class="services-list">
-        <article><span>01</span><h3>Interior Design</h3><p>Space planning, finishes, materials, fixtures and a cohesive visual direction.</p></article>
-        <article><span>02</span><h3>Renovation</h3><p>Kitchens, bathrooms, interiors and larger transformations managed as one project.</p></article>
-        <article><span>03</span><h3>Project Management</h3><p>Decisions, sequencing, coordination and communication from concept through completion.</p></article>
-        <article><span>04</span><h3>Construction</h3><p>Practical execution informed by design — so the idea survives contact with the jobsite.</p></article>
-      </div>
-    </section>
-
-    <section class="process" id="process">
-      <div class="process-visual">
-        <img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?auto=format&fit=crop&w=1400&q=88" alt="Material and design planning desk">
-      </div>
-      <div class="process-copy">
-        <p class="section-label">THE PROCESS</p>
-        <h2>Clarity before construction.</h2>
-        <ol>
-          <li><span>01</span><div><strong>Tell us about the space</strong><p>Goals, room, priorities, inspiration and where you are in the process.</p></div></li>
-          <li><span>02</span><div><strong>Shape the direction</strong><p>We organize the design problem before jumping into products or estimates.</p></div></li>
-          <li><span>03</span><div><strong>Design + plan</strong><p>Selections, scope and decisions become a clear project roadmap.</p></div></li>
-          <li><span>04</span><div><strong>Build with purpose</strong><p>Design intent and construction stay connected through execution.</p></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="ai-section">
-      <div class="ai-intro">
-        <p class="section-label">ALMA SPACE PLANNER</p>
-        <h2>Start with the idea.<br><em>We'll help make it clear.</em></h2>
-        <p>You don't need drawings, a perfect budget or the right vocabulary. Tell us what you want to change and we'll organize the first brief with you.</p>
-        <button class="primary-action dark" data-open-planner>Start your project brief</button>
-      </div>
-      <div class="ai-preview">
-        <div class="preview-top"><span>ALMA / SPACE PLANNER</span><span>GUIDED PROJECT INTAKE</span></div>
-        <div class="preview-question">What are you hoping this space does better for you?</div>
-        <div class="preview-reply">“Our kitchen looks dated, storage is bad, and we want it to feel calmer and more open.”</div>
-        <div class="preview-tags"><span>Kitchen</span><span>Renovation</span><span>Storage</span><span>Warm minimal</span></div>
-        <div class="preview-output"><small>PROJECT DIRECTION</small><strong>Rework the kitchen around function, openness and a quieter material palette.</strong></div>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <p class="section-label">ALMA</p>
-      <div>
-        <h2>Design sense.<br>Construction reality.</h2>
-        <p>ALMA is evolving beyond a single category of work. The studio brings together interior design, construction knowledge and hands-on project management to create spaces that feel intentional — and actually work.</p>
-      </div>
-      <aside>Spaces with purpose.</aside>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-brand">ALMA<span>.</span></div>
-    <p>Interior Design · Construction · Project Management</p>
-    <button data-open-planner>Start a project ↗</button>
-  </footer>
-
-  <div class="planner" id="planner" aria-hidden="true">
-    <div class="planner-backdrop" data-close-planner></div>
-    <section class="planner-panel" role="dialog" aria-modal="true" aria-labelledby="plannerTitle">
-      <header>
-        <div><span>ALMA</span><small>Space Planner</small></div>
-        <button data-close-planner aria-label="Close">×</button>
-      </header>
-      <div class="planner-progress"><span id="progressBar"></span></div>
-      <div class="planner-body">
-        <div class="planner-step active" data-step="0">
-          <p class="planner-eyebrow">LET'S START WITH THE SPACE</p>
-          <h2 id="plannerTitle">What are you thinking about changing?</h2>
-          <div class="choice-grid">
-            <button data-value="Kitchen">Kitchen</button>
-            <button data-value="Bathroom">Bathroom</button>
-            <button data-value="Living space">Living space</button>
-            <button data-value="Whole home">Whole home</button>
-            <button data-value="Basement">Basement</button>
-            <button data-value="Something else">Something else</button>
-          </div>
-        </div>
-
-        <div class="planner-step" data-step="1">
-          <p class="planner-eyebrow">YOUR GOAL</p>
-          <h2>What would make this project feel successful?</h2>
-          <textarea id="goalInput" placeholder="Example: more storage, better flow, warmer materials, a space that finally feels like us..."></textarea>
-          <button class="planner-next">Continue</button>
-        </div>
-
-        <div class="planner-step" data-step="2">
-          <p class="planner-eyebrow">WHERE YOU ARE NOW</p>
-          <h2>What stage are you in?</h2>
-          <div class="choice-grid">
-            <button data-value="Just exploring">Just exploring</button>
-            <button data-value="I know what I want">I know what I want</button>
-            <button data-value="I have inspiration">I have inspiration</button>
-            <button data-value="I have plans or drawings">I have plans or drawings</button>
-            <button data-value="Ready to build">Ready to build</button>
-          </div>
-        </div>
-
-        <div class="planner-step" data-step="3">
-          <p class="planner-eyebrow">PROJECT PRIORITIES</p>
-          <h2>What matters most?</h2>
-          <div class="choice-grid multi">
-            <button data-multi="Function">Function</button>
-            <button data-multi="Storage">Storage</button>
-            <button data-multi="Style">Style</button>
-            <button data-multi="Resale value">Resale value</button>
-            <button data-multi="Comfort">Comfort</button>
-            <button data-multi="Better layout">Better layout</button>
-          </div>
-          <button class="planner-next">Continue</button>
-        </div>
-
-        <div class="planner-step" data-step="4">
-          <p class="planner-eyebrow">PROJECT BRIEF</p>
-          <h2>Here's a first direction for your space.</h2>
-          <div class="brief-card" id="briefCard"></div>
-          <div class="contact-fields">
-            <input id="nameInput" placeholder="Your name" />
-            <input id="contactInput" placeholder="Email or phone" />
-          </div>
-          <button class="planner-next" id="saveBrief">Save this brief</button>
-          <small class="privacy-note">Prototype only — this version stores your brief in this browser.</small>
-        </div>
-      </div>
-      <footer class="planner-footer"><button id="plannerBack">← Back</button><span id="stepCounter">01 / 05</span></footer>
-    </section>
+<main id="top">
+<section class="hero">
+  <div class="hero-photo">
+    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=90" alt="Warm contemporary interior">
+    <div class="photo-label">Design + Build / Massachusetts</div>
   </div>
+  <div class="hero-copy">
+    <div class="eyebrow">INTERIORS / RENOVATION / PROJECT DIRECTION</div>
+    <h1>Your home<br>should work<br><span>for your life.</span></h1>
+    <p>ALMA connects the way a space feels with the way it gets built — one vision from first conversation to final detail.</p>
+    <button class="solid-btn" data-open-planner>Show us what you want to change <span>↗</span></button>
+  </div>
+  <div class="start-card" data-open-planner role="button" tabindex="0">
+    <div class="start-icon"><svg viewBox="0 0 24 24"><path d="M4 17l5-5 4 4 3-3 4 4"/><path d="M4 5h16v14H4z"/><circle cx="9" cy="9" r="1.5"/></svg></div>
+    <div><small>HAVE A PHOTO?</small><strong>Start with your space.</strong><span>Upload a room photo or tell us what's not working.</span></div>
+    <b>↗</b>
+  </div>
+</section>
 
-  <script src="./app.js?v=1"></script>
-</body>
-</html>
+<section class="problem" id="approach">
+  <div class="section-number">01 / APPROACH</div>
+  <div class="problem-copy">
+    <h2>Good design isn't<br>just what you <span>see.</span></h2>
+    <p>It's how the room flows. Where things go. How materials age. What construction actually requires. ALMA brings those decisions together instead of treating design and building as separate worlds.</p>
+  </div>
+  <div class="problem-side"><span>BEAUTY</span><i></i><span>FUNCTION</span><i></i><span>BUILDABILITY</span></div>
+</section>
+
+<section class="experience">
+  <div class="experience-copy">
+    <div class="section-number light">02 / START HERE</div>
+    <h2>You don't need<br>a finished plan.</h2>
+    <p>Bring the messy part: a photo, a problem, an inspiration image, or simply the feeling that the room isn't right.</p>
+  </div>
+  <div class="entry-grid">
+    <button data-open-planner data-mode="photo"><svg viewBox="0 0 24 24"><path d="M4 6h4l1.5-2h5L16 6h4v14H4z"/><circle cx="12" cy="13" r="4"/></svg><strong>I have a photo</strong><span>Start from the room you have</span><b>↗</b></button>
+    <button data-open-planner data-mode="room"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M8 21v-7h8v7"/></svg><strong>I want to change a room</strong><span>Kitchen, bath, living space + more</span><b>↗</b></button>
+    <button data-open-planner data-mode="idea"><svg viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M8.5 14.5C7 13.4 6 11.7 6 9.7A6 6 0 0118 9.7c0 2-1 3.7-2.5 4.8-.8.6-1.5 1.4-1.5 2.5h-4c0-1.1-.7-1.9-1.5-2.5z"/></svg><strong>I have an idea</strong><span>Turn inspiration into direction</span><b>↗</b></button>
+    <button data-open-planner data-mode="unsure"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.8 9a2.3 2.3 0 014.4 1c0 2-2.2 2.1-2.2 4"/><path d="M12 18h.01"/></svg><strong>I don't know where to start</strong><span>We'll help you find the first decision</span><b>↗</b></button>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-number">03 / WHAT WE DO</div>
+  <div class="service-intro"><h2>From idea<br>to real life.</h2><p>Not a catalog of services. One connected way to move a space forward.</p></div>
+  <div class="service-cards">
+    <article><span>01</span><h3>Design the space</h3><p>Layout, function, materials, fixtures, color and the visual language of the room.</p></article>
+    <article><span>02</span><h3>Define the project</h3><p>Turn ideas into scope, priorities and decisions that can actually be priced and built.</p></article>
+    <article><span>03</span><h3>Manage the work</h3><p>Keep design intent, construction details and client communication moving together.</p></article>
+  </div>
+</section>
+
+<section class="visual-break">
+ <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=1900&q=90" alt="Modern interior detail">
+ <div class="visual-caption"><small>THE ALMA POINT OF VIEW</small><strong>Warm. Useful.<br>Built to belong.</strong></div>
+</section>
+
+<section class="studio" id="studio">
+  <div class="section-number">04 / THE STUDIO</div>
+  <div class="studio-copy"><h2>One person to see<br>the <span>whole picture.</span></h2><p>ALMA grows from hands-on construction experience into a broader design practice. That matters: the conversation about how you want to live stays connected to the realities of how the project gets done.</p><button class="line-btn" data-open-planner>Talk about your project <span>↗</span></button></div>
+  <div class="studio-image"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1100&q=90" alt="Material-rich living space"></div>
+</section>
+</main>
+
+<footer><div class="brand footer-brand">ALMA<span>°</span></div><div>Spaces with purpose.</div><button data-open-planner>Start a project ↗</button></footer>
+
+<div class="planner" id="planner" aria-hidden="true">
+ <div class="planner-backdrop" data-close-planner></div>
+ <section class="planner-panel" role="dialog" aria-modal="true">
+  <header><div class="brand">ALMA<span>°</span></div><div class="planner-name">SPACE STARTER</div><button data-close-planner aria-label="Close">×</button></header>
+  <div class="planner-progress"><span id="progressBar"></span></div>
+  <div class="planner-body">
+   <div class="planner-step active" data-step="0">
+    <div class="planner-kicker">START WITH WHAT YOU HAVE</div><h2>How do you want to begin?</h2>
+    <div class="start-options">
+     <button data-mode-choice="photo"><svg viewBox="0 0 24 24"><path d="M4 6h4l1.5-2h5L16 6h4v14H4z"/><circle cx="12" cy="13" r="4"/></svg><strong>With a photo</strong><span>Show us the room</span></button>
+     <button data-mode-choice="room"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13"/><path d="M8 21v-7h8v7"/></svg><strong>With the room</strong><span>Tell us what needs to change</span></button>
+     <button data-mode-choice="idea"><svg viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M8.5 14.5C7 13.4 6 11.7 6 9.7A6 6 0 0118 9.7c0 2-1 3.7-2.5 4.8-.8.6-1.5 1.4-1.5 2.5h-4c0-1.1-.7-1.9-1.5-2.5z"/></svg><strong>With an idea</strong><span>Describe what you're imagining</span></button>
+     <button data-mode-choice="unsure"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.8 9a2.3 2.3 0 014.4 1c0 2-2.2 2.1-2.2 4"/><path d="M12 18h.01"/></svg><strong>I'm not sure</strong><span>We'll guide the first step</span></button>
+    </div>
+   </div>
+   <div class="planner-step" data-step="1">
+    <div class="planner-kicker">THE SPACE</div><h2>What are we working with?</h2>
+    <div class="choice-grid"><button data-room="Kitchen">Kitchen</button><button data-room="Bathroom">Bathroom</button><button data-room="Living space">Living space</button><button data-room="Whole home">Whole home</button><button data-room="Basement">Basement</button><button data-room="Other">Something else</button></div>
+   </div>
+   <div class="planner-step" data-step="2">
+    <div class="planner-kicker">IN YOUR WORDS</div><h2>What's not working — or what do you want to feel different?</h2>
+    <textarea id="goalInput" placeholder="Don't worry about design language. Just tell us what you notice, need or want..."></textarea>
+    <button class="planner-next">Continue</button>
+   </div>
+   <div class="planner-step" data-step="3">
+    <div class="planner-kicker">WHAT MATTERS</div><h2>Pick the things that matter most.</h2>
+    <div class="choice-grid multi"><button data-multi="Better flow">Better flow</button><button data-multi="More storage">More storage</button><button data-multi="A new look">A new look</button><button data-multi="Comfort">Comfort</button><button data-multi="Resale value">Resale value</button><button data-multi="Make it buildable">Make it buildable</button></div>
+    <button class="planner-next">Build my starting brief</button>
+   </div>
+   <div class="planner-step" data-step="4">
+    <div class="planner-kicker">YOUR STARTING POINT</div><h2>Now there's something concrete to talk about.</h2>
+    <div class="brief-card" id="briefCard"></div>
+    <div class="contact-fields"><input id="nameInput" placeholder="Your name"><input id="contactInput" placeholder="Email or phone"></div>
+    <button class="planner-next" id="saveBrief">Save my brief</button><small class="privacy-note">Prototype: this brief is stored only in this browser.</small>
+   </div>
+  </div>
+  <div class="planner-footer"><button id="plannerBack">← Back</button><span id="stepCounter">01 / 05</span></div>
+ </section>
+</div>
+<script src="./app.js?v=2"></script>
+</body></html>
