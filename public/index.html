@@ -7,7 +7,7 @@
 <title>ALMA — Spaces with purpose</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css?v=6">
+<link rel="stylesheet" href="./styles.css?v=7">
 </head>
 <body>
 <header class="topbar">
@@ -33,7 +33,11 @@
       <small>START WITH WHAT YOU HAVE</small>
       <strong>Show us your space.</strong>
       <span>Upload a photo, use your camera, or simply describe what's not working.</span>
-      <div class="start-modes"><i>PHOTO</i><i>CAMERA</i><i>VOICE</i></div>
+      <div class="start-modes">
+        <button type="button" data-hero-action="photo">PHOTO</button>
+        <button type="button" data-hero-action="camera">CAMERA</button>
+        <button type="button" data-hero-action="voice">VOICE</button>
+      </div>
     </div>
     <b>↗</b>
   </div>
@@ -91,7 +95,7 @@
     <button class="line-btn" data-open-planner>Talk about your project <span>↗</span></button>
   </div>
   <figure class="studio-image founder-photo">
-    <img src="./assets/jessica-alma-2x.webp" alt="Jessica, founder of ALMA">
+    <img src="./assets/jessica-alma-full.jpg" alt="Jessica, founder of ALMA">
     <figcaption><span>JESSICA</span><small>ALMA / SPACES WITH PURPOSE</small></figcaption>
   </figure>
 </section>
@@ -147,5 +151,5 @@
   <div class="planner-footer"><button id="plannerBack">← Back</button><span id="stepCounter">01 / 05</span></div>
  </section>
 </div>
-<script src="./app.js?v=3"></script>
+<script src="./app.js?v=4"></script>
 </body></html>
