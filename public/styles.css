@@ -158,3 +158,49 @@
   .hero h1{font-size:clamp(43px,12.3vw,54px)}
   .hero-actions{align-items:flex-start;flex-direction:column}
 }
+
+/* Kitchen-specialist services + distinct founder story */
+.services-specialist{padding-bottom:0}
+.specialist-lead{display:grid;grid-template-columns:1.35fr .65fr;min-height:620px;border-top:1px solid #55574f}
+.specialist-feature{margin:0;position:relative;overflow:hidden}
+.specialist-feature img{height:100%;object-fit:cover;filter:saturate(.82)}
+.specialist-feature figcaption{position:absolute;left:0;right:0;bottom:0;padding:28px;color:#fff;background:linear-gradient(transparent,rgba(14,15,13,.82))}
+.specialist-feature figcaption span{display:block;font-size:9px;letter-spacing:.15em;margin-bottom:8px}
+.specialist-feature figcaption strong{font-family:"DM Serif Display",serif;font-size:42px;font-weight:400}
+.specialist-copy{padding:55px 4vw;display:flex;flex-direction:column;justify-content:center;background:#2a2e29}
+.specialist-copy>span,.management-strip>span{font-size:9px;letter-spacing:.16em;color:#999b91}
+.specialist-copy h3{font-family:"DM Serif Display",serif;font-size:44px;line-height:1.02;font-weight:400;margin:18px 0}
+.specialist-copy p{font-size:14px;line-height:1.75;color:#bebdb5}
+.specialist-copy a,.management-strip a{width:max-content;margin-top:18px;padding-bottom:5px;border-bottom:1px solid #777;font-size:11px}
+.service-visual-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #55574f}
+.service-visual-grid article{border-right:1px solid #55574f}
+.service-visual-grid article:last-child{border-right:0}
+.service-visual-grid img{height:330px;object-fit:cover;filter:saturate(.8)}
+.service-visual-grid article>div{padding:28px 26px 38px}
+.service-visual-grid span{font-size:9px;color:#8d8e84}
+.service-visual-grid h3{font-family:"DM Serif Display",serif;font-size:31px;line-height:1.05;font-weight:400;margin:18px 0 12px}
+.service-visual-grid p{font-size:13px;line-height:1.7;color:#bebdb5;margin:0}
+.management-strip{margin:0 -6vw;padding:38px 6vw 44px;display:grid;grid-template-columns:.45fr 1fr 1fr auto;gap:30px;align-items:start;background:#151814;border-top:1px solid #55574f}
+.management-strip strong{font-family:"DM Serif Display",serif;font-size:28px;font-weight:400;line-height:1.1}
+.management-strip p{font-size:12px;line-height:1.65;color:#aaa;margin:0}
+.management-strip a{margin-top:0;white-space:nowrap}
+@media(max-width:900px){
+ .specialist-lead{grid-template-columns:1fr;min-height:0}
+ .specialist-feature{height:520px}
+ .service-visual-grid{grid-template-columns:1fr}
+ .service-visual-grid article{display:grid;grid-template-columns:.9fr 1.1fr;border-right:0;border-bottom:1px solid #55574f}
+ .service-visual-grid img{height:100%;min-height:300px}
+ .management-strip{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+ .specialist-feature{height:390px}
+ .specialist-feature figcaption{padding:20px}
+ .specialist-feature figcaption strong{font-size:32px}
+ .specialist-copy{padding:42px 22px}
+ .specialist-copy h3{font-size:38px}
+ .service-visual-grid article{grid-template-columns:1fr}
+ .service-visual-grid img{height:300px;min-height:0}
+ .service-visual-grid article>div{padding:25px 18px 34px}
+ .service-visual-grid h3{font-size:30px}
+ .management-strip{margin:0 -18px;padding:34px 18px 40px;grid-template-columns:1fr;gap:18px}
+}
