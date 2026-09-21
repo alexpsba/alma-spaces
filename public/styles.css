@@ -104,3 +104,57 @@
   .positioning h2{font-size:47px;line-height:.98}
   .positioning-copy p{font-size:17px;line-height:1.62;font-weight:500}
 }
+
+/* Mobile hero flow fix — keep content and visualizer from colliding */
+@media(max-width:720px){
+  .hero{
+    height:auto;
+    min-height:0;
+    padding:118px 18px 28px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+  .hero-media,.hero-overlay{position:absolute;inset:0}
+  .hero-content{
+    position:relative;
+    left:auto;
+    right:auto;
+    top:auto;
+    transform:none;
+    width:100%;
+    z-index:3;
+    padding-bottom:34px;
+  }
+  .hero h1{
+    font-size:clamp(46px,12.7vw,58px);
+    line-height:.91;
+  }
+  .hero-lead{
+    max-width:100%;
+    margin:24px 0;
+  }
+  .hero-actions{
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:14px 18px;
+  }
+  .hero-tool{
+    position:relative;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    width:100%;
+    z-index:4;
+    margin-top:0;
+  }
+  .tool-preview{min-height:0;padding:18px}
+  .tool-frame{min-height:0;padding:22px}
+  .tool-frame strong{font-size:32px}
+}
+@media(max-width:480px){
+  .hero{padding-top:104px}
+  .hero h1{font-size:clamp(43px,12.3vw,54px)}
+  .hero-actions{align-items:flex-start;flex-direction:column}
+}
