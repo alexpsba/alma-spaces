@@ -1,316 +1,83 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f3efe8">
-<meta name="description" content="ALMA° — Interior design, renovation planning and project management on the North Shore of Massachusetts, supported by intelligent tools that make the process clearer from day one.">
-<title>ALMA° — Spaces with Soul</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css?v=30">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f2ec">
+<meta name="description" content="ALMA° — Kitchen design, renovation and interiors on the North Shore of Massachusetts.">
+<title>ALMA° — Kitchen & Interior Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=40">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="#top" aria-label="ALMA home">ALMA<span>°</span><small>SPACES WITH SOUL</small></a>
-  <nav class="desktop-nav" aria-label="Primary navigation">
-    <a href="#services">Services</a>
-    <a href="#visualizer">Space Visualizer</a>
-    <a href="#ai">AI + Design</a>
-    <a href="#process">Process</a>
-    <a href="#about">Jessica</a>
-  </nav>
-  <div class="header-actions">
-    <div class="language" aria-label="Languages"><span class="active">EN</span><span>PT</span><span>ES</span></div>
-    <button class="header-cta" data-open-intake>Start a project <span>↗</span></button>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-  </div>
+<a class="brand" href="#top">ALMA<span>°</span><small>SPACES WITH SOUL</small></a>
+<nav class="desktop-nav"><a href="#services">Services</a><a href="#work">Work</a><a href="#visualizer">Visualizer</a><a href="#about">Jessica</a></nav>
+<div class="header-actions"><div class="language"><span class="active">EN</span><span>PT</span><span>ES</span></div><button class="header-cta" data-open-intake>Start a project</button><button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span></button></div>
 </header>
-
-<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-  <a href="#services">Services</a>
-  <a href="#visualizer">Space Visualizer</a>
-  <a href="#ai">AI + Design</a>
-  <a href="#process">Process</a>
-  <a href="#about">Jessica</a>
-  <button data-open-intake>Start a project ↗</button>
-</div>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true"><a href="#services">Services</a><a href="#work">Work</a><a href="#visualizer">Visualizer</a><a href="#about">Jessica</a><button data-open-intake>Start a project</button></div>
 
 <main id="top">
 <section class="hero">
-  <div class="hero-media" aria-hidden="true">
-    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=92" alt="">
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="eyebrow">NORTH SHORE · MASSACHUSETTS</div>
-    <h1>Design with soul.<br><em>Plan with intelligence.</em></h1>
-    <p class="hero-lead">Interior design, renovation planning and project management for homes that need to feel beautiful, work better, and make sense in real life.</p>
-    <div class="hero-actions">
-      <a class="primary-link" href="#visualizer">Try the Space Visualizer <span>↘</span></a>
-      <button class="text-link" data-open-intake>Tell us about your project <span>↗</span></button>
-    </div>
-  </div>
-
-  <div class="hero-tool">
-    <div class="tool-topline">
-      <span>ALMA° SPACE VISUALIZER</span>
-      <b>AI-ASSISTED INTAKE</b>
-    </div>
-    <div class="tool-preview">
-      <div class="tool-frame">
-        <span class="frame-label">START WITH YOUR SPACE</span>
-        <strong>See the room.<br>Clarify the opportunity.</strong>
-        <p>Upload a photo, describe what feels wrong, and turn the first conversation into a clearer project direction.</p>
-        <div class="tool-actions">
-          <label for="heroPhoto">Upload photo</label>
-          <input id="heroPhoto" type="file" accept="image/*" hidden>
-          <button id="heroCamera">Camera</button>
-          <input id="heroCameraInput" type="file" accept="image/*" capture="environment" hidden>
-          <button id="heroVoice">Voice</button>
-        </div>
-      </div>
-      <div class="hero-upload-preview" id="heroUploadPreview" aria-live="polite"></div>
-    </div>
-    <a href="#visualizer" class="tool-footer"><span>Open the full Space Visualizer</span><b>→</b></a>
-  </div>
+<div class="hero-media"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=92" alt="Refined residential interior"></div>
+<div class="hero-copy"><span>North Shore · Massachusetts</span><h1>Spaces with soul.</h1><p>Kitchen design, renovation and interiors shaped around the way you live.</p><div class="hero-actions"><a href="#services">Explore services</a><button data-open-intake>Start a project</button></div></div>
 </section>
 
-<section class="positioning">
-  <div>
-    <small>ALMA°</small>
-    <h2>A better project starts<br>before the first drawing.</h2>
-  </div>
-  <div class="positioning-copy">
-    <p>ALMA brings design thinking, project coordination and practical decision-making into one process. Instead of separating inspiration from execution, we connect the way you want to live with the choices required to build it well.</p>
-    <p class="quiet">Technology helps us organize the complexity. Human judgment shapes the result.</p>
-    <div class="positioning-image"><img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=1400&q=90" alt="Warm residential interior with layered natural materials"></div>
-  </div>
+<section class="intro">
+<span>ALMA°</span><h2>Beautiful is not enough.<br>A space has to work.</h2><p>We connect design, renovation planning and project coordination so every decision belongs to the same idea.</p>
 </section>
 
-<section class="services services-specialist" id="services">
-  <div class="section-head">
-    <span>01 / WHAT WE DO</span>
-    <h2>Kitchen specialist.<br>Whole-home thinking.</h2>
-  </div>
-  <div class="specialist-lead">
-    <figure class="specialist-feature">
-      <img src="https://images.unsplash.com/photo-1556912167-f556f1f39fdf?auto=format&fit=crop&w=1800&q=92" alt="Warm, refined kitchen interior">
-      <figcaption><span>PRIMARY SPECIALTY</span><strong>Kitchen Design &amp; Renovation</strong></figcaption>
-    </figure>
-    <div class="specialist-copy">
-      <span>THE HEART OF THE HOME</span>
-      <h3>Designed around the way you actually live.</h3>
-      <p>ALMA brings layout, storage, lighting, materials and renovation planning into one clear kitchen process — so beauty and everyday function are resolved together.</p>
-      <a href="#visualizer">Start with your kitchen →</a>
-    </div>
-  </div>
-  <div class="service-visual-grid">
-    <article>
-      <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=90" alt="Refined bathroom interior">
-      <div><span>02</span><h3>Bathroom Design &amp; Renovation</h3><p>Layout, fixtures, surfaces, lighting and the details that turn a compact room into a calmer daily experience.</p></div>
-    </article>
-    <article>
-      <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=90" alt="Layered living room interior">
-      <div><span>03</span><h3>Interior Design &amp; Furnishing</h3><p>Rooms shaped through furniture, materials, color, lighting and objects — with enough restraint to still feel like your home.</p></div>
-    </article>
-    <article>
-      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=90" alt="Residential renovation exterior">
-      <div><span>04</span><h3>Home Renovation &amp; Space Planning</h3><p>Rework flow, priorities and scope before construction begins, with decisions connected from concept through execution.</p></div>
-    </article>
-  </div>
-  <div class="management-strip">
-    <span>BUILT INTO THE PROCESS</span>
-    <strong>Project management keeps the design intact.</strong>
-    <p>Schedules, vendors, selections and decisions stay connected so the project can move forward without losing the original intent.</p>
-    <a href="#process">See how ALMA works →</a>
-  </div>
+<section class="services" id="services">
+<div class="section-title"><span>01 / SERVICES</span><h2>Kitchen first.<br>Whole-home thinking.</h2></div>
+<article class="service-feature">
+<img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=92" alt="Warm architectural kitchen">
+<div><small>PRIMARY SPECIALTY</small><h3>Kitchen Design<br>& Renovation</h3><p>Layout, storage, lighting, materials and renovation planning resolved as one experience.</p><a href="#visualizer">Start with your kitchen</a></div>
+</article>
+<div class="service-row">
+<article><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1100&q=90" alt="Minimal bathroom"><span>Bathroom Design & Renovation</span></article>
+<article><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1100&q=90" alt="Refined living space"><span>Interior Design & Furnishing</span></article>
+<article><img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1100&q=90" alt="Residential renovation"><span>Home Renovation & Space Planning</span></article>
+</div>
+<p class="service-note">Project management is built into the process — keeping selections, vendors, schedules and decisions connected.</p>
 </section>
 
-<section class="results-gallery" id="results">
-  <div class="results-head">
-    <span>02 / WHAT THE WORK BECOMES</span>
-    <h2>Ideas are only useful<br>when they become rooms.</h2>
-    <p>ALMA is a design and project practice, so the outcome must be visible. These are the kinds of transformations we shape: warmer kitchens, calmer living spaces, better circulation, more useful storage and homes that feel more intentional.</p>
-  </div>
-  <div class="results-grid">
-    <figure class="result-large">
-      <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1700&q=92" alt="Open living and dining interior">
-      <figcaption><strong>WHOLE-HOME INTERIOR</strong><span>Flow · furnishing · material continuity</span></figcaption>
-    </figure>
-    <figure>
-      <img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=1200&q=92" alt="Calm contemporary living room">
-      <figcaption><strong>LIVING SPACE</strong><span>Comfort · circulation · atmosphere</span></figcaption>
-    </figure>
-    <figure>
-      <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=92" alt="Modern residential exterior renovation">
-      <figcaption><strong>RENOVATION &amp; EXTERIOR</strong><span>Architecture · materials · curb presence</span></figcaption>
-    </figure>
-    <figure class="result-wide">
-      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1700&q=92" alt="Coastal kitchen and gathering space">
-      <figcaption><strong>KITCHEN &amp; GATHERING</strong><span>Function · storage · materials · everyday life</span></figcaption>
-    </figure>
-  </div>
+<section class="work" id="work">
+<div class="section-title"><span>02 / SPACES</span><h2>Quiet details.<br>Clear decisions.</h2></div>
+<div class="work-grid">
+<figure class="wide"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=92" alt="Kitchen and gathering space"><figcaption>Kitchen / gathering</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=1200&q=92" alt="Calm living room"><figcaption>Living / atmosphere</figcaption></figure>
+<figure><img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=1200&q=92" alt="Material-rich interior"><figcaption>Materials / detail</figcaption></figure>
+</div>
 </section>
 
 <section class="visualizer" id="visualizer">
-  <div class="visualizer-copy">
-    <span class="section-index">02 / SPACE VISUALIZER</span>
-    <h2>Start with the room<br>you actually have.</h2>
-    <p>You do not need a finished plan. Upload a photo, choose the room, and tell us what is not working. ALMA turns that starting point into a structured project brief Jessica can review with you.</p>
-    <div class="ai-rule"><span>AI helps organize.</span><span>Jessica makes the decisions.</span></div>
-  </div>
-  <div class="visualizer-app" aria-label="ALMA Space Visualizer demo">
-    <div class="viz-header"><span>ALMA° / SPACE VISUALIZER</span><b>CONCEPT INTAKE</b></div>
-    <div class="viz-grid">
-      <div class="viz-photo" id="vizPhoto">
-        <div class="viz-empty">
-          <small>01 / YOUR SPACE</small>
-          <strong>Upload a room photo.</strong>
-          <p>Phone photos are perfect.</p>
-          <div class="viz-photo-actions">
-            <label for="vizFile">Upload</label>
-            <input id="vizFile" type="file" accept="image/*" hidden>
-            <button id="vizCamera">Camera</button>
-            <input id="vizCameraInput" type="file" accept="image/*" capture="environment" hidden>
-          </div>
-        </div>
-      </div>
-      <div class="viz-inputs">
-        <label>02 / ROOM
-          <select id="vizRoom">
-            <option>Kitchen</option><option>Bathroom</option><option>Living room</option><option>Bedroom</option><option>Basement</option><option>Whole home</option><option>Other</option>
-          </select>
-        </label>
-        <label>03 / WHAT SHOULD CHANGE?
-          <textarea id="vizGoal" placeholder="Example: The kitchen feels closed off, storage is awkward, and we want a warmer, calmer space."></textarea>
-        </label>
-        <div class="viz-input-actions">
-          <button id="vizMic" type="button">Use microphone</button>
-          <button id="vizAnalyze" type="button">Create project brief →</button>
-        </div>
-      </div>
-    </div>
-    <div class="viz-result" id="vizResult" hidden>
-      <div><small>SPACE</small><strong id="resultSpace">Kitchen</strong></div>
-      <div><small>PRIMARY NEED</small><strong id="resultNeed">Clarify function and flow</strong></div>
-      <div><small>FIRST MOVE</small><strong id="resultMove">Map layout constraints before selecting finishes</strong></div>
-      <div><small>JESSICA REVIEWS</small><strong>Design direction · scope · buildability</strong></div>
-    </div>
-    <div class="viz-disclaimer">Interactive concept intake. The site organizes your input into a starting brief; design and construction decisions are reviewed by Jessica.</div>
-  </div>
-</section>
-
-<section class="ai-section" id="ai">
-  <div class="ai-intro">
-    <span>03 / AI + HUMAN JUDGMENT</span>
-    <h2>Less time organizing chaos.<br>More time making good decisions.</h2>
-    <p>ALMA uses intelligent tools where they are useful — not where they get in the way. The goal is a clearer project, faster communication and better-prepared decisions.</p>
-  </div>
-  <div class="ai-capabilities">
-    <article><span>01</span><h3>Visual intake</h3><p>Photos, voice notes and project goals become a structured starting point instead of scattered messages.</p></article>
-    <article><span>02</span><h3>Smarter briefs</h3><p>Key constraints, priorities and questions are organized before the design conversation begins.</p></article>
-    <article><span>03</span><h3>Option exploration</h3><p>Technology can help compare directions and clarify choices before time and money are committed.</p></article>
-    <article><span>04</span><h3>Project memory</h3><p>Decisions stay connected to the project so important context does not disappear between conversations.</p></article>
-  </div>
-  <div class="ai-principle"><strong>AI supports the process.</strong><span>It does not replace taste, accountability, experience or the person responsible for the work.</span></div>
-  <div class="ai-visual">
-    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=90" alt="Refined interior with material and furniture details">
-    <div><span>FROM INPUT TO DIRECTION</span><strong>See more. Compare sooner. Decide with context.</strong></div>
-  </div>
+<div class="visualizer-copy"><span>03 / SPACE VISUALIZER</span><h2>Start with a photo.</h2><p>Show us the room. Tell us what is not working. ALMA turns the first conversation into a clearer project brief.</p><div class="ai-rule"><span>AI organizes.</span><span>Jessica decides.</span></div></div>
+<div class="visualizer-app">
+<div class="viz-header"><span>ALMA° / SPACE VISUALIZER</span><b>CONCEPT INTAKE</b></div>
+<div class="viz-grid">
+<div class="viz-photo" id="vizPhoto"><div class="viz-empty"><small>YOUR SPACE</small><strong>Add a room photo.</strong><div class="viz-photo-actions"><label for="vizFile">Upload</label><input id="vizFile" type="file" accept="image/*" hidden><button id="vizCamera">Camera</button><input id="vizCameraInput" type="file" accept="image/*" capture="environment" hidden></div></div></div>
+<div class="viz-inputs"><label>ROOM<select id="vizRoom"><option>Kitchen</option><option>Bathroom</option><option>Living room</option><option>Bedroom</option><option>Whole home</option><option>Other</option></select></label><label>WHAT SHOULD CHANGE?<textarea id="vizGoal" placeholder="The kitchen feels closed off and we need better storage..."></textarea></label><div class="viz-input-actions"><button id="vizMic">Use microphone</button><button id="vizAnalyze">Create brief</button></div></div>
+</div>
+<div class="viz-result" id="vizResult" hidden><div><small>SPACE</small><strong id="resultSpace">Kitchen</strong></div><div><small>PRIMARY NEED</small><strong id="resultNeed">Clarify function and flow</strong></div><div><small>FIRST MOVE</small><strong id="resultMove">Map layout constraints</strong></div><div><small>JESSICA REVIEWS</small><strong>Direction · scope · buildability</strong></div></div>
+</div>
 </section>
 
 <section class="process" id="process">
-  <div class="process-heading">
-    <span>04 / HOW IT WORKS</span>
-    <h2>From “something feels off”<br>to a project you can act on.</h2>
-  </div>
-  <ol class="process-list">
-    <li><span>01</span><div><h3>Show us the space</h3><p>Photo, video, voice or a simple description. Start wherever you are.</p></div></li>
-    <li><span>02</span><div><h3>Clarify the real problem</h3><p>We separate symptoms from priorities: flow, storage, light, materials, scope, budget or execution.</p></div></li>
-    <li><span>03</span><div><h3>Shape the direction</h3><p>Jessica translates the brief into a design and project path that fits the home and the way you live.</p></div></li>
-    <li><span>04</span><div><h3>Plan before spending</h3><p>Selections, scope, sequencing and responsibilities become clear before the project gets expensive.</p></div></li>
-    <li><span>05</span><div><h3>Move the project forward</h3><p>ALMA stays connected to the details so design intent and execution do not drift apart.</p></div></li>
-  </ol>
-  <div class="process-inline-image">
-    <img src="https://images.unsplash.com/photo-1600566753051-f0b89df2dd90?auto=format&fit=crop&w=1800&q=90" alt="Detailed kitchen interior showing coordinated finishes and lighting">
-    <span>DESIGN INTENT → MATERIALS → COORDINATION → FINISHED SPACE</span>
-  </div>
+<span>04 / PROCESS</span><h2>Less noise.<br>Better decisions.</h2>
+<div class="steps"><article><b>01</b><h3>Show the space</h3><p>Photo, voice or a simple description.</p></article><article><b>02</b><h3>Define the direction</h3><p>Priorities, scope and visual intent become clear.</p></article><article><b>03</b><h3>Plan it well</h3><p>Materials, layout and execution stay connected.</p></article><article><b>04</b><h3>Move forward</h3><p>ALMA keeps the project aligned through the details.</p></article></div>
 </section>
 
-<section class="process-visual">
-  <div class="process-visual-copy">
-    <span>FROM DECISION TO DETAIL</span>
-    <h2>The process should feel<br>as considered as the result.</h2>
-    <p>Good project management is not invisible paperwork. It protects the visual outcome by keeping selections, sequencing, vendors and decisions aligned.</p>
-  </div>
-  <div class="process-visual-images">
-    <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=88" alt="Material selection detail">
-    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1100&q=88" alt="Interior project workspace">
-  </div>
-</section>
-
-<section class="northshore">
-  <div class="northshore-image"><img src="https://ssl.cdn-redfin.com/photo/52/mbpaddedwide/546/genMid.71908546_2.jpg" alt="Shingle Style oceanfront home in Marblehead, Massachusetts"></div>
-  <div class="northshore-copy">
-    <span>ROOTED ON THE NORTH SHORE</span>
-    <h2>Designed for the character<br>of this place.</h2>
-    <p>Historic homes, coastal light, shingle architecture, tight footprints, old details and new expectations. ALMA works with the context of the North Shore rather than designing over it.</p>
-    <div class="places">MARBLEHEAD · BEVERLY · SALEM · SWAMPSCOTT · MANCHESTER-BY-THE-SEA · GLOUCESTER</div>
-  </div>
-</section>
+<section class="northshore"><div class="northshore-image"><img src="https://ssl.cdn-redfin.com/photo/52/mbpaddedwide/546/genMid.71908546_2.jpg" alt="Shingle Style oceanfront home in Marblehead, Massachusetts"></div><div class="northshore-copy"><span>NORTH SHORE</span><h2>Designed for<br>this place.</h2><p>Historic homes, coastal light, shingle architecture and new ways of living.</p><div class="places">MARBLEHEAD · BEVERLY · SALEM · SWAMPSCOTT · MANCHESTER-BY-THE-SEA · GLOUCESTER</div></div></section>
 
 <section class="about" id="about">
-  <div class="about-copy">
-    <span>05 / THE EXPERIENCE BEHIND ALMA</span>
-    <h2>Design instinct.<br>Built-world experience.</h2>
-    <p>ALMA grows from Jessica’s experience across interior design, construction, business administration and production management. She learned to see a room not only as an image, but as a sequence of choices that has to work in the real world.</p>
-    <p>That perspective now shapes a practice with a particular focus on kitchens — spaces where layout, storage, materials, lighting, construction and everyday life all meet. She works fluently in English, Portuguese and Spanish and stays close to the decisions that carry a project from idea to execution.</p>
-    <button class="line-button" data-open-intake>Talk with Jessica <span>↗</span></button>
-  </div>
-  <div class="about-photo">
-    <img src="https://pub-7dc0351a38364c198f49ad36a292116d.r2.dev/WhatsApp%20Image%202026-09-20%20at%206.45.02%20PM.jpeg" alt="Jessica, founder of ALMA">
-    <div class="about-caption"><strong>JESSICA</strong><span>ALMA° / SPACES WITH SOUL</span></div>
-  </div>
+<div class="about-photo"><img src="https://pub-7dc0351a38364c198f49ad36a292116d.r2.dev/WhatsApp%20Image%202026-09-20%20at%206.45.02%20PM.jpeg" alt="Jessica, founder of ALMA"></div>
+<div class="about-copy"><span>05 / JESSICA</span><h2>The experience<br>behind ALMA.</h2><p>Jessica brings together interior design, construction, business administration and production management — a perspective that connects the visual idea to what it takes to make it real.</p><p>Her particular focus is the kitchen: the place where function, materials, construction and everyday life meet.</p><button data-open-intake>Talk with Jessica</button></div>
 </section>
 
-<section class="closing" id="contact">
-  <span>READY WHEN YOU ARE</span>
-  <h2>You do not need the whole plan.<br>You just need a place to start.</h2>
-  <div class="closing-actions">
-    <a href="#visualizer">Open the Space Visualizer <span>↘</span></a>
-    <button data-open-intake>Start a project with Jessica <span>↗</span></button>
-  </div>
-</section>
+<section class="closing"><span>START SOMEWHERE</span><h2>Show us the space.</h2><button data-open-intake>Start a project</button></section>
 </main>
+<footer><div class="brand">ALMA<span>°</span><small>SPACES WITH SOUL</small></div><div>North Shore · Massachusetts</div><div>English · Português · Español</div></footer>
 
-<footer>
-  <div class="brand footer-brand">ALMA<span>°</span><small>SPACES WITH SOUL</small></div>
-  <div class="footer-meta"><span>North Shore · Massachusetts</span><span>English · Português · Español</span></div>
-  <a href="#top">Back to top ↑</a>
-</footer>
-
-<div class="intake" id="intake" aria-hidden="true">
-  <div class="intake-backdrop" data-close-intake></div>
-  <section class="intake-panel" role="dialog" aria-modal="true" aria-labelledby="intakeTitle">
-    <div class="intake-top"><div class="brand">ALMA<span>°</span></div><button data-close-intake aria-label="Close">×</button></div>
-    <span class="intake-kicker">PROJECT STARTER</span>
-    <h2 id="intakeTitle">Tell us what you want<br>to change.</h2>
-    <p>Start with a room, a problem, an idea, a photo or a voice note.</p>
-    <div class="intake-tools">
-      <label for="intakeFile">Upload photo</label><input id="intakeFile" type="file" accept="image/*,.pdf" hidden>
-      <button id="intakeCamera">Use camera</button><input id="intakeCameraInput" type="file" accept="image/*" capture="environment" hidden>
-      <button id="intakeMic">Speak</button>
-    </div>
-    <div id="intakeFiles" class="intake-files"></div>
-    <textarea id="intakeText" placeholder="Example: We want to rethink our kitchen and first floor. The layout feels closed off and we need better storage."></textarea>
-    <div class="intake-contact"><input id="intakeName" placeholder="Your name"><input id="intakeContact" placeholder="Email or phone"></div>
-    <button id="saveIntake" class="submit-intake">Save project starter →</button>
-    <small class="intake-note">Prototype: your project starter is stored only in this browser.</small>
-  </section>
-</div>
-
-<script src="./app.js?v=30"></script>
-</body>
-</html>
+<div class="intake" id="intake" aria-hidden="true"><div class="intake-backdrop" data-close-intake></div><section class="intake-panel"><div class="intake-top"><div class="brand">ALMA<span>°</span></div><button data-close-intake aria-label="Close">×</button></div><span class="intake-kicker">PROJECT STARTER</span><h2>Tell us what<br>you want to change.</h2><p>Start with a room, a problem, an idea, a photo or a voice note.</p><div class="intake-tools"><label for="intakeFile">Upload photo</label><input id="intakeFile" type="file" accept="image/*,.pdf" hidden><button id="intakeCamera">Use camera</button><input id="intakeCameraInput" type="file" accept="image/*" capture="environment" hidden><button id="intakeMic">Speak</button></div><div id="intakeFiles" class="intake-files"></div><textarea id="intakeText" placeholder="We want to rethink our kitchen..."></textarea><div class="intake-contact"><input id="intakeName" placeholder="Your name"><input id="intakeContact" placeholder="Email or phone"></div><button id="saveIntake" class="submit-intake">Save project starter</button><small class="intake-note">Prototype: stored only in this browser.</small></section></div>
+<script src="./app.js?v=40"></script>
+</body></html>
