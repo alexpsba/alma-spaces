@@ -26,3 +26,44 @@ footer{font-weight:300;letter-spacing:.06em}
  .hero-copy p{font-weight:300;line-height:1.68}
  .mobile-menu a{font-weight:400}
 }
+
+/* Light display serif — refined architectural minimalism */
+.brand,
+.hero h1,
+.intro h2,
+.section-title h2,
+.visualizer h2,
+.process h2,
+.northshore h2,
+.about h2,
+.closing h2,
+.service-feature h3,
+.service-row span,
+.viz-empty strong,
+.steps h3,
+.intake-panel h2,
+.mobile-menu a{
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-weight:300;
+}
+.hero h1{letter-spacing:-.035em;line-height:.86}
+.intro h2,
+.section-title h2,
+.visualizer h2,
+.process h2,
+.northshore h2,
+.about h2,
+.closing h2{letter-spacing:-.03em;line-height:.91}
+.service-feature h3{letter-spacing:-.02em;line-height:.96}
+.service-row span{letter-spacing:-.01em;line-height:1.08}
+.steps h3{letter-spacing:-.01em}
+.brand{font-weight:400;letter-spacing:-.025em}
+@media(max-width:720px){
+  .hero h1{line-height:.88}
+  .intro h2,
+  .section-title h2,
+  .visualizer h2,
+  .process h2,
+  .northshore h2,
+  .about h2{line-height:.93}
+}
