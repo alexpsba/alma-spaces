@@ -152,22 +152,6 @@ footer{font-weight:300;letter-spacing:.06em}
  .story-heart p{font-size:25px!important}
 }
 
-/* Jessica palette pass — warmer, softer quiet luxury */
-:root{--paper:#f3ede4;--ink:#24231f;--soft:#cbb79e;--line:#d9cec0;--muted:#756d64;--dark:#272922}
-body{background:#f3ede4}
-.services{background:#f8f4ee}
-.service-feature{background:#e8ddd0}
-.service-feature>img,.service-row img,.work-grid img{filter:saturate(.72) sepia(.06) contrast(.96)}
-.service-feature>div{background:#e4d6c5}
-.work{background:#f3ede4}
-.visualizer{background:#ded0bf}
-.visualizer-app{background:#f5efe7;border-color:#c5b39d}
-.viz-photo{background:#c7ae91}
-.process{background:#292b25}
-.northshore-copy{background:#f1e9df}
-.about{background:#f8f4ee}
-.section-title h2 em,.visualizer h2 em,.process h2 em,.northshore h2 em,.about h2 em,.closing h2 em{color:#9a7c5d}
-
 /* ALMA soul-of-home pass — informed by Jessica's original concept */
 .soul-home{display:grid;grid-template-columns:.88fr 1.12fr;min-height:700px;background:#eee5d8}
 .soul-copy{padding:10vw 7vw;display:flex;flex-direction:column;justify-content:center}
